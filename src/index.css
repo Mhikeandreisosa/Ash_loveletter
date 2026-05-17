@@ -1,0 +1,51 @@
+:root {
+  --pink-100: #fff0f5; /* Lavender blush */
+  --pink-200: #ffe4e1; /* Misty rose */
+  --pink-300: #ffb6c1; /* Light pink */
+  --pink-400: #ff69b4; /* Hot pink */
+  --pink-500: #ff1493; /* Deep pink */
+  --text-dark: #4a4a4a;
+  --text-light: #fff;
+  --font-main: 'Quicksand', sans-serif;
+  --font-cursive: 'Caveat', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background: linear-gradient(135deg, var(--pink-100) 0%, var(--pink-200) 100%);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pink-300);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-400);
+}
